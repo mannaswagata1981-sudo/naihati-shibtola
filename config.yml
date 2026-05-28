@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads" # যেখানে আপনার আপলোড করা ছবি জমা হবে
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Temple Name Bengali", name: "title_bn", widget: "string" }
+          - { label: "Temple Name English", name: "title_en", widget: "string" }
+          - { label: "History Bengali", name: "history_bn", widget: "text" }
+          - { label: "History English", name: "history_en", widget: "text" }
+          - { label: "English Opening Date", name: "date_en", widget: "string" }
+          - { label: "Bangla Opening Date", name: "date_bn", widget: "string" }
