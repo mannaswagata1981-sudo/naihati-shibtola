@@ -1,12 +1,245 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নৈহাটি শিবতলা | Naihati Shivtola</title>
+    <meta name="description" content="নৈহাটি শিবতলা একটি প্রাচীন শিব মন্দির এবং স্থানীয় মানুষের আধ্যাত্মিক বিশ্বাস, ভক্তি ও ঐতিহ্যের একটি পবিত্র স্থান।">
+    <meta name="keywords" content="Naihati Shivtola, নৈহাটি শিবতলা, Marotola, Arit, Paschim Medinipur, Shiv Temple">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body { font-family: 'Poppins', 'Noto Serif Bengali', sans-serif; }
+        .text-gold { color: #d4af37; }
+        .bg-gold { background-color: #f59e0b; }
+        .swiper { width: 100%; padding-top: 20px; padding-bottom: 40px; }
+        .swiper-slide { background-position: center; background-size: cover; width: 300px; height: 300px; }
+    </style>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </body>
+</head>
+<body class="bg-[#faf8f5] text-gray-800">
+
+    <header class="relative bg-cover bg-center h-[650px]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1609137144813-2d20dcc799ed?auto=format&fit=crop&w=1200&q=80');">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center p-6 text-white">
+            <div class="flex items-center space-x-3">
+                <span class="text-amber-500 text-4xl"><i class="fa-solid fa-trident"></i></span>
+                <div>
+                    <h1 class="text-2xl font-bold text-amber-500 tracking-wide">নৈহাটি শিবতলা</h1>
+                    <p class="text-xs uppercase tracking-widest text-amber-200">Naihati Shivtola</p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#" class="text-amber-400">Home</a>
+                <a href="#" class="hover:text-amber-400 transition">History</a>
+                <a href="#" class="hover:text-amber-400 transition">New Temple</a>
+                <a href="#" class="hover:text-amber-400 transition">Photos</a>
+                <a href="#" class="hover:text-amber-400 transition">Location</a>
+                <a href="#" class="hover:text-amber-400 transition">Contact</a>
+            </div>
+            <div class="flex space-x-2">
+                <button class="bg-amber-500 text-xs px-4 py-1.5 rounded-md text-black font-bold shadow-md">বাংলা</button>
+                <button class="border border-white/50 text-xs px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition">English</button>
+            </div>
+        </nav>
+
+        <div class="absolute bottom-24 left-6 md:left-24 text-white max-w-3xl">
+            <h2 class="text-5xl md:text-6xl font-bold text-white mb-2 drop-shadow-lg">নৈহাটি শিবতলা</h2>
+            <h3 class="text-3xl md:text-4xl font-semibold text-amber-400 mb-6 tracking-wide">Naihati Shivtola</h3>
+            <p class="text-xl text-amber-100 font-medium">আস্থা, ঐতিহ্য ও ভক্তির এক পবিত্র স্থান</p>
+            <p class="text-sm italic text-gray-300 tracking-wide mt-1">A Sacred Place of Faith, Heritage & Devotion</p>
+            
+            <div class="flex items-center space-x-4 my-6">
+                <div class="h-[1px] bg-amber-500 w-16"></div>
+                <i class="fa-solid fa-trident text-amber-500 text-xl"></i>
+                <div class="h-[1px] bg-amber-500 w-16"></div>
+            </div>
+            
+            <button class="bg-amber-50 text-amber-950 px-6 py-3 rounded-md shadow-lg font-bold flex items-center space-x-3 hover:bg-amber-200 transition">
+                <i class="fa-solid fa-gopuram text-lg"></i> <span>Explore Temple</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="text-center">
+                    <h4 class="font-bold text-amber-800 text-xl">মন্দিরের ঠিকানা</h4>
+                    <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider mb-6">Address</p>
+                    <div class="text-sm text-gray-600 space-y-3 text-left pl-4 border-l-2 border-amber-500">
+                        <p class="font-medium"><i class="fa-solid fa-location-dot text-amber-600 mr-2"></i> Naihati (Naihati shibtola/Marotola)</p>
+                        <p><span class="font-semibold text-gray-400">Post:</span> Arit</p>
+                        <p><span class="font-semibold text-gray-400">Dist:</span> Paschim Medinipur</p>
+                        <p><span class="font-semibold text-gray-400">Pin:</span> 712148</p>
+                    </div>
+                </div>
+                <button class="mt-8 w-full bg-amber-600 hover:bg-amber-700 text-white py-2.5 rounded-lg font-semibold text-sm transition shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-map-location-dot"></i> <span>View on Google Map</span>
+                </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 md:col-span-1">
+                <h4 class="font-bold text-amber-800 text-xl text-center">মন্দিরের ইতিহাস</h4>
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider mb-4 text-center">Temple History</p>
+                <div class="space-y-4 max-h-[250px] overflow-y-auto pr-1">
+                    <p class="text-xs text-gray-700 leading-relaxed text-justify">
+                        নৈহাটি শিবতলা বহু প্রাচীন একটি শিব মন্দির। এই মন্দিরটি স্থানীয় মানুষের আধ্যাত্মিক বিশ্বাস, ভক্তি ও ঐতিহ্যের একটি গুরুত্বপূর্ণ কেন্দ্র। মহাশিবরাত্রি, গাজন উৎসব সহ বিভিন্ন ধর্মীয় অনুষ্ঠানের মাধ্যমে এই মন্দিরে ভক্তদের সমাগম ঘটে থাকে।
+                    </p>
+                    <p class="text-[11px] text-gray-500 italic text-justify leading-relaxed border-t border-dashed border-gray-200 pt-3">
+                        Naihati Shivtola is an ancient Shiva temple and an important center of spiritual faith, devotion and tradition for the local people. Devotees gather here on Maha Shivratri, Gajan and various religious occasions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center flex flex-col justify-between">
+                <div>
+                    <h4 class="font-bold text-amber-800 text-xl">নব নির্মিত মন্দিরের সূচনা</h4>
+                    <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider mb-6">New Temple Inauguration</p>
+                    
+                    <div class="bg-amber-50/60 border border-amber-100 p-3 rounded-lg mb-4 flex items-center space-x-4">
+                        <div class="bg-amber-500 text-white p-2.5 rounded-md"><i class="fa-solid fa-calendar-days text-xl"></i></div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-amber-800 font-bold uppercase tracking-wider">English Date</p>
+                            <p class="text-base font-bold text-gray-800">17/06/2024</p>
+                        </div>
+                    </div>
+                    <div class="bg-amber-50/60 border border-amber-100 p-3 rounded-lg flex items-center space-x-4">
+                        <div class="bg-amber-500 text-white p-2.5 rounded-md"><i class="fa-solid fa-calendar-minus text-xl"></i></div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-amber-800 font-bold">বাংলা তারিখ</p>
+                            <p class="text-base font-bold text-gray-800">১২/০৩/১৪৩১</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-center text-amber-600 text-4xl opacity-80 animate-pulse">
+                    <i class="fa-solid fa-trident"></i>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <h4 class="font-bold text-amber-800 text-xl">সামাজিক মাধ্যম</h4>
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider mb-6">Follow Us</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-brands fa-facebook text-blue-600 text-3xl"></i>
+                            <div class="text-left"><p class="text-xs font-bold text-gray-700">Facebook Page</p><p class="text-[10px] text-gray-400">Official Page</p></div>
+                        </div>
+                        <a href="#" class="text-xs bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded font-medium shadow-sm transition">Visit</a>
+                    </div>
+                    
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-brands fa-youtube text-red-600 text-3xl"></i>
+                            <div class="text-left"><p class="text-xs font-bold text-gray-700">YouTube</p><p class="text-[10px] text-gray-400">Official Channel</p></div>
+                        </div>
+                        <a href="#" class="text-xs bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded font-medium shadow-sm transition">Visit</a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-2 rounded-lg hover:bg-amber-50/40 border border-dashed border-amber-200 transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-play text-amber-600 text-2xl"></i>
+                            <div class="text-left"><p class="text-xs font-bold text-amber-800">Temple Video</p></div>
+                        </div>
+                        <a href="#" class="text-[11px] bg-amber-600 hover:bg-amber-700 text-white px-2.5 py-1.5 rounded font-semibold transition"><i class="fa-solid fa-play mr-1"></i> Watch</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="mt-20 text-center relative">
+            <h3 class="text-2xl font-bold text-amber-900">মন্দিরের ছবি</h3>
+            <p class="text-xs text-amber-600 font-semibold uppercase tracking-widest mb-2">Temple Photos</p>
+            <div class="flex justify-center items-center space-x-2 mb-8">
+                <div class="h-[1px] bg-amber-300 w-12"></div>
+                <i class="fa-solid fa-om text-amber-600 text-sm"></i>
+                <div class="h-[1px] bg-amber-300 w-12"></div>
+            </div>
+            
+            <div class="swiper mySwiper max-w-5xl mx-auto">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rounded-xl shadow-md border-2 border-white overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1609137144813-2d20dcc799ed?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="Temple 1">
+                    </div>
+                    <div class="swiper-slide rounded-xl shadow-md border-2 border-white overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1609137144813-2d20dcc799ed?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="Temple 2">
+                    </div>
+                    <div class="swiper-slide rounded-xl shadow-md border-2 border-white overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1609137144813-2d20dcc799ed?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="Temple 3">
+                    </div>
+                    <div class="swiper-slide rounded-xl shadow-md border-2 border-white overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1609137144813-2d20dcc799ed?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="Temple 4">
+                    </div>
+                </div>
+                <div class="swiper-button-next text-amber-600 bg-white/80 p-6 rounded-full shadow-md after:text-lg"></div>
+                <div class="swiper-button-prev text-amber-600 bg-white/80 p-6 rounded-full shadow-md after:text-lg"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <div class="mt-12 bg-amber-100/50 p-6 rounded-2xl border border-amber-200/70 text-center max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-around space-y-4 md:space-y-0 shadow-sm">
+            <div class="text-4xl text-amber-700 opacity-80"><i class="fa-solid fa-gopuram"></i></div>
+            <div class="px-4">
+                <p class="font-bold text-amber-950 text-lg">শ্রদ্ধা, ভক্তি ও ঐতিহ্যের মিলনে নৈহাটি শিবতলা আজও মানুষের হৃদয়ে জায়গা করে রয়েছে।</p>
+                <p class="text-xs text-amber-800 font-medium italic mt-1">Naihati Shivtola continues to hold a special place in the hearts of people through faith, devotion and tradition.</p>
+            </div>
+            <div class="text-3xl text-amber-600 opacity-80"><i class="fa-solid fa-fire-alt animate-bounce"></i></div>
+        </div>
+    </main>
+
+    <footer class="bg-[#1a1510] text-gray-400 text-sm py-12 border-t-4 border-amber-600">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <h5 class="text-amber-500 font-bold text-base mb-4 tracking-wide uppercase">Important Links</h5>
+                <ul class="space-y-2.5 text-xs font-medium">
+                    <li><a href="#" class="hover:text-amber-400 transition flex items-center"><i class="fa-solid fa-chevron-right text-[9px] mr-2 text-amber-600"></i> Home</a></li>
+                    <li><a href="#" class="hover:text-amber-400 transition flex items-center"><i class="fa-solid fa-chevron-right text-[9px] mr-2 text-amber-600"></i> History</a></li>
+                    <li><a href="#" class="hover:text-amber-400 transition flex items-center"><i class="fa-solid fa-chevron-right text-[9px] mr-2 text-amber-600"></i> New Temple</a></li>
+                    <li><a href="#" class="hover:text-amber-400 transition flex items-center"><i class="fa-solid fa-chevron-right text-[9px] mr-2 text-amber-600"></i> Photos</a></li>
+                    <li><a href="#" class="hover:text-amber-400 transition flex items-center"><i class="fa-solid fa-chevron-right text-[9px] mr-2 text-amber-600"></i> Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-amber-500 font-bold text-base mb-4 tracking-wide uppercase">Contact Info</h5>
+                <div class="space-y-3 text-xs font-medium">
+                    <p class="flex items-start"><i class="fa-solid fa-map-marker-alt text-amber-500 mt-0.5 mr-2.5"></i> <span>Naihati (Naihati shibtola/Marotola), Post: Arit, Dist: Paschim Medinipur, Pin: 712148</span></p>
+                    <p class="flex items-center"><i class="fa-solid fa-phone text-amber-500 mr-2.5"></i> +91 XXXXXXXXXX</p>
+                    <p class="flex items-center"><i class="fa-solid fa-envelope text-amber-500 mr-2.5"></i> info@naihatishivtola.org</p>
+                </div>
+            </div>
+            <div class="text-center md:text-right flex flex-col justify-between">
+                <div>
+                    <h5 class="text-amber-500 font-bold text-base mb-4 tracking-wide uppercase">Connect With Us</h5>
+                    <div class="flex justify-center md:justify-end space-x-5 text-2xl">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <p class="text-[11px] text-gray-500 mt-6 md:mt-0">&copy; 2026 Naihati Shivtola | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: { rotate: 15, stretch: 0, depth: 100, modifier: 1, slideShadows: true },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            loop: true
+        });
+    </script>
+</body>
 </html>
